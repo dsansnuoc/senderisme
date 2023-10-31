@@ -1,0 +1,32 @@
+.dsn-menu ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dsn-menu li {
+  margin: 0 10px;
+}
+
+.dsn-menu a {
+  :hover {
+    text-decoration: underline;
+  }
+  color: $blancoPrimario;
+  text-decoration: none;
+}
+
+.dsn-icono-menu {
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: $mqMinWidth) {
+  .dsn-menu ul {
+    display: flex;
+  }
+  .dsn-icono-menu {
+    display: none;
+  }
+}

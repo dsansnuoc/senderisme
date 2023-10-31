@@ -1,0 +1,176 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+/**
+ * Import variables
+ */
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+/*
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+*/
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  padding: 2rem;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 24px;
+  color: #000078;
+  background-color: #d5faff;
+}
+
+.uoc-container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.uoc-logo {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .uoc-logo {
+    max-width: none;
+  }
+}
+
+.uoc-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000078;
+}
+@media (min-width: 768px) {
+  .uoc-title {
+    font-size: 36px;
+  }
+}
+
+.uoc-footer {
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.dsn-title {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: responsive-font-size(12px, 24px, 320, 768);
+  font-weight: 700;
+  color: #000078;
+}
+@media (min-width: 768px) {
+  .dsn-title {
+    font-size: 48px;
+  }
+}
+
+.dsn-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #009ade;
+}
+
+.dsn-container {
+  max-width: 800px;
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dsn-menu ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dsn-menu li {
+  margin: 0 10px;
+}
+
+.dsn-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.dsn-menu a :hover {
+  text-decoration: underline;
+}
+
+.dsn-icono-menu {
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .dsn-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dsn-icono-menu {
+    display: none;
+  }
+}
+.dsn-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.dsn-th,
+.dsn-td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.dsn-th {
+  background-color: #f2f2f2;
+}
+
+/**
+ * Do NOT include anything else in this file!
+ *//*# sourceMappingURL=main.css.map */
